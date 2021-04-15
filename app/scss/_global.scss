@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+button {
+    padding: 0;
+    border: 0;
+}
+input,
+textarea {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin: 3vw;
+    font-size: 5vw;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-cont {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.lazy-background {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/1.png"); /* Placeholder image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.lazy-background.visible {
+    background-image: url("../images/archi.jpg"); /* The final image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
